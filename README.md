@@ -1,6 +1,6 @@
-# KatakanaKira
+# KanaKira
 
-KatakanaKira is a TrueType font that combines Katakana characters with their Romaji equivalents, displaying the Romaji text above each Katakana character.
+KanaKira is a TrueType font that combines Katakana characters with their Romaji equivalents, displaying the Romaji text above each Katakana character.
 
 ## Features
 
@@ -18,8 +18,8 @@ KatakanaKira is a TrueType font that combines Katakana characters with their Rom
 ### Setup
 1. Clone this repository:
    ```
-   git clone https://github.com/satoi8080/KatakanaKira.git
-   cd KatakanaKira
+   git clone https://github.com/satoi8080/KanaKira.git
+   cd KanaKira
    ```
 
 2. Install dependencies:
@@ -65,7 +65,7 @@ Run the main script to build the font:
 python main.py
 ```
 
-This generates the font file specified in the config.json (default: `KatakanaKiraSans-Regular.ttf`) in the project directory.
+This generates the font file specified in the config.json (default: `KanaKiraSans-Regular.ttf`) in the project directory.
 
 After building, you can install the font on your system, use it in applications that support TrueType fonts, or incorporate it into web designs with @font-face CSS rules.
 
