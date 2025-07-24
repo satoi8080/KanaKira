@@ -1,0 +1,24 @@
+{
+  "fonts": {
+    "input": {
+      "japanese": "assets/Noto_Sans_JP/NotoSansJP-Regular.ttf",
+      "romaji": "assets/Noto_Sans_Mono/NotoSansMono-Regular.ttf"
+    },
+    "output": "KanaKiraSans-Regular.ttf"
+  },
+  "scaling": {
+    "kana_scale": 0.65,
+    "romaji_scale": 0.35
+  },
+  "positioning": {
+    "gap": 25,
+    "ref_height": 860,
+    "vertical_offset": 60,
+    "horizontal_offset": 15
+  },
+  "font_info": {
+    "family_name": "KanaKira Sans",
+    "full_name": "KanaKira Sans Regular",
+    "postscript_name": "KanaKiraSans-Regular"
+  }
+}
