@@ -1,7 +1,7 @@
 [project]
 name = "kanakira"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "KanaKira is a TrueType font that combines Katakana characters with their Romaji equivalents, displaying the Romaji text above each Katakana character."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

@@ -1,107 +1,108 @@
 # KanaKira
 
-KanaKira is a TrueType font that combines Katakana characters with their Romaji equivalents, displaying the Romaji text above each Katakana character.
+**A unique Japanese learning font that displays Romaji above Katakana characters**
 
-## Features
+Perfect for Japanese language students, educators, and anyone learning to read Katakana! KanaKira Sans shows you both
+the Katakana character and its pronunciation in one beautiful, easy-to-read font.
 
-- **Dual-script glyphs**: Katakana with centered Romaji above
-- **Complete coverage**: All standard Katakana with Hepburn romanization
-- **Quality base fonts**: Built using Noto Sans JP and Noto Sans Mono
-- **Optimized spacing**: Calibrated vertical spacing between elements
+*Example: When you type アリガトウ, you'll see "A", "RI", "GA", "TO", "U" displayed above each character*
 
-## Installation
+## ✨ What makes KanaKira special?
 
-### Requirements
+- **Learn faster**: See pronunciation while reading Katakana
+- **Beautiful design**: Clean, readable typography based on Google's Noto fonts
+- **Complete coverage**: All Katakana characters including combinations (キャ, ッチ, etc.)
+- **Ready to use**: Works in any app that supports TrueType fonts
+
+## 🚀 Quick Start
+
+### Step 1: Get the Font
+
+Build the font from source (it's easier than it sounds!):
+
+**Requirements:**
+
 - Python 3.12+
-- FontTools 4.59.0+
+- FontTools library
 
-### Setup
-1. Clone this repository:
-   ```
+**Build Steps:**
+
+1. Clone and setup:
+   ```bash
    git clone https://github.com/satoi8080/KanaKira.git
    cd KanaKira
-   ```
-
-2. Install dependencies:
-   ```
    pip install fonttools>=4.59.0
    ```
-   
-   Or with uv:
+
+2. Build the font:
+   ```bash
+   python main.py
    ```
-   uv pip install -e .
-   ```
 
-## Usage
+3. Find your font: `KanaKiraSans-Regular.ttf` will be created in the project folder
 
-### Configuration
+### Step 2: Install the Font
 
-The font generation process is controlled by a `config.json` file with the following parameters:
+Once you have `KanaKiraSans-Regular.ttf`:
 
-- **version**: Font version number
-- **fonts**: Input and output font paths
-  - **input.japanese**: Path to the Japanese font (Katakana source)
-  - **input.romaji**: Path to the monospace font (Romaji source)
-  - **output**: Path for the generated font file
-- **scaling**: Size adjustment parameters
-  - **kana_scale**: Scale factor for Katakana glyphs
-  - **romaji_scale**: Scale factor for Romaji glyphs
-- **positioning**: Position adjustment parameters
-  - **gap**: Vertical gap between Katakana and Romaji
-  - **ref_height**: Reference Katakana height
-  - **vertical_offset**: Vertical offset for glyphs
-  - **horizontal_offset**: Horizontal offset for glyphs
-- **font_info**: Font naming information
-  - **family_name**: Font family name
-  - **full_name**: Full font name
-  - **postscript_name**: PostScript font name
+- **Windows**: Right-click → "Install"
+- **Mac**: Double-click → "Install Font"
+- **Linux**: Copy to `~/.fonts/` or `/usr/share/fonts/`
 
-You can modify these parameters to customize the font generation process.
+## 🎯 How to Use
 
-### Building the Font
+Once installed, KanaKira Sans works like any other font:
 
-Run the main script to build the font:
-```
-python main.py
-```
+- **In Word processors**: Type Katakana and see Romaji appear above automatically
+- **In learning apps**: Perfect for flashcards and study materials
+- **On websites**: Use with CSS `font-family: 'KanaKira Sans'`
+- **In presentations**: Great for teaching materials
 
-This generates the font file specified in the config.json (default: `KanaKiraSans-Regular.ttf`) in the project directory.
+**Example text to try:** アリガトウゴザイマス (Thank you very much!)
 
-After building, you can install the font on your system, use it in applications that support TrueType fonts, or incorporate it into web designs with @font-face CSS rules.
+## ⚙️ Customization
 
-## How It Works
+Want to adjust the font? Edit `config.json` to change:
 
-The font creation process:
-1. Loads Noto Sans JP and Noto Sans Mono fonts
-2. Scales Katakana and Romaji
-3. Positions Romaji above Katakana with proper spacing
-4. Centers Romaji horizontally above each character
-5. Creates a new font with these composite glyphs
+- Romaji size and positioning
+- Katakana scaling
+- Vertical spacing between characters
+- Font naming
 
-## Character Coverage
+Then rebuild with `python main.py`
 
-Includes all standard Katakana with Hepburn romanization:
-- Basic Katakana (ア, イ, ウ, etc.)
-- Voiced Katakana (ガ, ギ, グ, etc.)
-- Small Katakana (ァ, ィ, ゥ, etc.)
-- Special characters (ー, ヴ)
+## 📚 What's Included
 
-## Dependencies
+KanaKira Sans covers all Katakana characters you need:
 
-- [FontTools](https://github.com/fonttools/fonttools): Font manipulation library
-- [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP): Katakana glyphs
-- [Noto Sans Mono](https://fonts.google.com/noto/specimen/Noto+Sans+Mono): Romaji text
+**Basic Characters**: ア イ ウ エ オ カ キ ク...  
+**Voiced Sounds**: ガ ギ グ ゲ ゴ ザ ジ ズ...  
+**Small Characters**: ァ ィ ゥ ェ ォ ッ ャ ュ ョ  
+**Combinations**: キャ シュ チョ ニャ...  
+**Double Consonants**: ッカ ッキ ック...  
+**Special Characters**: ー ヴ ン
 
-## License
+## 🛠️ Technical Details
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Built with love using:
 
-The Noto fonts are licensed under the SIL Open Font License 1.1. Full license text in `Noto_Sans_JP/OFL.txt` and `Noto_Sans_Mono/OFL.txt`.
+- **Base fonts**: Google's Noto Sans JP + Noto Sans Mono
+- **Technology**: Python + FontTools library
+- **Format**: TrueType (.ttf) with OpenType ligature features
+- **Encoding**: Full Unicode support
 
-## Contributing
+## 📄 License
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+**KanaKira Sans**: MIT License - Use freely in any project!  
+**Noto Fonts**: SIL Open Font License 1.1
+
+## 🤝 Contributing & Support
+
+- **Found a bug?** [Open an issue](https://github.com/satoi8080/KanaKira/issues)
+- **Have ideas?** [Start a discussion](https://github.com/satoi8080/KanaKira/discussions)
+- **Want to contribute?** Pull requests welcome!
 
 ---
 
-Created with ❤️ for Japanese language learners and typography enthusiasts.
+**Made with ❤️ for Japanese learners worldwide**  
+*Perfect for students, teachers, and typography enthusiasts*
