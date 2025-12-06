@@ -7,6 +7,8 @@ the Katakana character and its pronunciation in one beautiful, easy-to-read font
 
 *Example: When you type アリガトウ, you'll see "A", "RI", "GA", "TO", "U" displayed above each character*
 
+![KanaKira Sans Preview](assets/KanaKira_Sans_Preview.png)
+
 ## ✨ What makes KanaKira special?
 
 - **Learn faster**: See pronunciation while reading Katakana
