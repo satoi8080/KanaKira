@@ -20,6 +20,13 @@ the Katakana character and its pronunciation in one beautiful, easy-to-read font
 
 ### Step 1: Get the Font
 
+**Option A: Download Pre-built Font (Recommended)**
+
+Download the latest `KanaKiraSans-Regular.ttf` from
+the [Releases Page](https://github.com/satoi8080/KanaKira/releases) - no build required!
+
+**Option B: Build from Source**
+
 Build the font from source (it's easier than it sounds!):
 
 **Requirements:**
