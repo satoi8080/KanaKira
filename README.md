@@ -102,7 +102,8 @@ Built with love using:
 
 ## 💡 Inspiration
 
-This project was inspired by [Canto Font](https://canto.hk/), a beautifully designed font that displays Jyutping above Chinese characters. KanaKira adapts this concept for Japanese learners using Katakana and Romaji.
+This project was inspired by [Cantonese Font](https://canto.hk/), a beautifully designed font that displays Jyutping
+above Chinese characters. KanaKira adapts this concept for Japanese learners using Katakana and Romaji.
 
 ## 📄 License
 
