@@ -100,6 +100,10 @@ Built with love using:
 - **Format**: TrueType (.ttf) with OpenType ligature features
 - **Encoding**: Full Unicode support
 
+## 💡 Inspiration
+
+This project was inspired by [Canto Font](https://canto.hk/), a beautifully designed font that displays Jyutping above Chinese characters. KanaKira adapts this concept for Japanese learners using Katakana and Romaji.
+
 ## 📄 License
 
 This repository is licensed in two parts:
