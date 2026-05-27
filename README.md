@@ -16,7 +16,7 @@ the Katakana character and its pronunciation in one beautiful, easy-to-read font
 - **Complete coverage**: All Katakana characters including combinations (キャ, ッチ, etc.)
 - **Ready to use**: Works in any app that supports TrueType fonts
 
-## 🚀 Quick Start
+## 📥 For Users
 
 ### Step 1: Get the Font
 
@@ -24,31 +24,6 @@ the Katakana character and its pronunciation in one beautiful, easy-to-read font
 
 Download the latest `KanaKiraSans-Regular.ttf` from
 the [Releases Page](https://github.com/satoi8080/KanaKira/releases) - no build required!
-
-**Option B: Build from Source**
-
-Build the font from source (it's easier than it sounds!):
-
-**Requirements:**
-
-- Python 3.12+
-- FontTools library
-
-**Build Steps:**
-
-1. Clone and setup:
-   ```bash
-   git clone https://github.com/satoi8080/KanaKira.git
-   cd KanaKira
-   pip install fonttools>=4.59.0
-   ```
-
-2. Build the font:
-   ```bash
-   python main.py
-   ```
-
-3. Find your font: `KanaKiraSans-Regular.ttf` will be created in the project folder
 
 ### Step 2: Install the Font
 
@@ -69,17 +44,6 @@ Once installed, KanaKira Sans works like any other font:
 
 **Example text to try:** アリガトウゴザイマス (Thank you very much!)
 
-## ⚙️ Customization
-
-Want to adjust the font? Edit `config.json` to change:
-
-- Romaji size and positioning
-- Katakana scaling
-- Vertical spacing between characters
-- Font naming
-
-Then rebuild with `python main.py`
-
 ## 📚 What's Included
 
 KanaKira Sans covers all Katakana characters you need:
@@ -91,7 +55,55 @@ KanaKira Sans covers all Katakana characters you need:
 **Double Consonants**: ッカ ッキ ック...  
 **Special Characters**: ー ヴ ン
 
-## 🛠️ Technical Details
+## 🛠️ For Developers
+
+### Build from Source
+
+Build the font from source (it's easier than it sounds!):
+
+**Requirements:**
+
+- Python 3.12+
+- [uv](https://docs.astral.sh/uv/) (Recommended for dependency management)
+
+**Build Steps:**
+
+1. Clone and setup:
+   ```bash
+   git clone https://github.com/satoi8080/KanaKira.git
+   cd KanaKira
+   uv sync
+   ```
+
+2. Build the font:
+   ```bash
+   uv run main.py
+   ```
+
+3. Find your font: `KanaKiraSans-Regular.ttf` will be created in the project folder
+
+### Development Setup (Optional)
+
+If you want to contribute to the project, set up the development environment:
+
+```bash
+uv run pre-commit install
+```
+
+This will ensure code is automatically formatted and checked before each commit.
+
+## ⚙️ Customization
+
+Want to adjust the font? Edit `config.json` to change:
+
+- Romaji size and positioning
+- Katakana scaling
+- Vertical spacing between characters
+- Font naming
+
+Then rebuild with `uv run main.py`
+
+## 🔬 Technical Details
 
 Built with love using:
 
