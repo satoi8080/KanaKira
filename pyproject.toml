@@ -5,13 +5,14 @@ description = "KanaKira is a TrueType font that combines Katakana characters wit
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fonttools==4.61.1",
+    "fonttools>=4.63.0",
 ]
 
 [dependency-groups]
 dev = [
     "pre-commit>=4.6.0",
     "ruff>=0.15.14",
+    "virtualenv>=20.36.1",
 ]
 
 [tool.ruff]
