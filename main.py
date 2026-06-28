@@ -575,13 +575,10 @@ def build_font() -> None:
         version_text = f"Version {project_version}"
         name.setName(version_text, 5, pid, eid, lid)
 
-        trademark_text = "KanaKira is a name of repository of Zhe (satoi8080)."
-        name.setName(trademark_text, 7, pid, eid, lid)
-
-        manufacturer_text = "Zhe (satoi8080)"
+        manufacturer_text = "Akira"
         name.setName(manufacturer_text, 8, pid, eid, lid)
 
-        designer_text = "Zhe (satoi8080)"
+        designer_text = "Akira"
         name.setName(designer_text, 9, pid, eid, lid)
 
         description_text = (

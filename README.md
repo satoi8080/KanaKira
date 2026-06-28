@@ -22,8 +22,9 @@ the Katakana character and its pronunciation in one beautiful, easy-to-read font
 
 **Option A: Download Pre-built Font (Recommended)**
 
-Download the latest `KanaKiraSans-Regular.ttf` from
+Download the latest `KanaKiraSans-*.zip` from
 the [Releases Page](https://github.com/satoi8080/KanaKira/releases) - no build required!
+Unzip it to get `KanaKiraSans-Regular.ttf` alongside `OFL.txt`, the font's license.
 
 ### Step 2: Install the Font
 
