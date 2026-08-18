@@ -83,6 +83,13 @@ Build the font from source (it's easier than it sounds!):
 
 3. Find your font: `KanaKiraSans-Regular.ttf` will be created in the project folder
 
+4. Optional - package it for release:
+   ```bash
+   uv run python scripts/package.py
+   ```
+   Produces `KanaKiraSans-v<version>.zip` with `OFL.txt` bundled alongside the font,
+   as the OFL requires the license to travel with every copy.
+
 ### Development Setup (Optional)
 
 If you want to contribute to the project, set up the development environment:

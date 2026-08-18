@@ -1,4 +1,5 @@
 {
+  "package_name": "KanaKiraSans",
   "fonts": {
     "input": {
       "japanese": "assets/Noto_Sans_JP/NotoSansJP-Regular.ttf",
